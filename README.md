@@ -93,7 +93,7 @@ streamlit run app.py
 
 ### Chat with paper
 
-![Chat with paper](screenshots/Chatwithpaper.png)
+![Chat with paper](screenshots/Chat_with_paper.png)
 
 ### Research Paper Summary
 
