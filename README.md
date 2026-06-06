@@ -1,6 +1,6 @@
 # ResearchMate AI
 
-ResearchMate AI is an AI-powered research assistant built using Streamlit, Google Gemini API, FAISS, and Sentence Transformers. The application helps researchers, students, and academicians analyze research papers efficiently.
+ResearchMate AI is a Retrieval-Augmented Generation (RAG)-based research assistant built using Streamlit, OpenRouter API, FAISS, and Sentence Transformers. It enables researchers and students to upload research papers, perform semantic search, generate summaries, create literature surveys, identify research gaps, and interact with academic documents through natural language queries.
 
 ## Features
 
@@ -52,7 +52,7 @@ ResearchMate-AI/
 ├── requirements.txt
 ├── README.md
 ├── .gitignore
-├── .env
+├── .env.example
 └── screenshots/
 ```
 ## Installation
