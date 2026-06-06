@@ -16,7 +16,8 @@ ResearchMate AI is an AI-powered research assistant built using Streamlit, Googl
 
 * Python
 * Streamlit
-* Google Gemini API
+*  OpenRouter API
+* OpenAI Python SDK
 * Sentence Transformers
 * FAISS
 * LangChain Text Splitters
@@ -31,7 +32,29 @@ ResearchMate AI is an AI-powered research assistant built using Streamlit, Googl
 4. Generate Embeddings using Sentence Transformers
 5. Store Embeddings in FAISS Vector Database
 6. Retrieve Relevant Context
-7. Generate Responses using Gemini API
+7. Generate Responses using OpenRouter LLM
+
+## Workflow
+
+1. Upload a PDF research paper.
+2. Extract text from the PDF.
+3. Generate embeddings using Sentence Transformers.
+4. Store embeddings in FAISS vector database.
+5. Retrieve relevant chunks using semantic search.
+6. Generate AI-powered responses using OpenRouter.
+7. Download generated outputs.
+
+## Repository Structure
+
+```text
+ResearchMate-AI/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+├── .env
+└── screenshots/## Repository Structure
 
 ## Installation
 
@@ -47,11 +70,43 @@ streamlit run app.py
 
 ## Features Implemented
 
-* Research Paper Summarization
-* Literature Survey Generation
-* Research Gap Detection
-* Paper Insights Extraction
-* RAG-based Question Answering
+✅ Research Paper Summarization
+
+✅ Literature Survey Generation
+
+✅ Research Gap Detection
+
+✅ Paper Insights Extraction
+
+✅ Retrieval-Augmented Generation (RAG)
+
+✅ Semantic Search using FAISS
+
+✅ Interactive Streamlit Web Interface
+
+✅ Downloadable Results
+
+## Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home.png)
+
+### Upload Research Paper
+
+![Upload Paper](screenshots/upload_page.png)
+
+### Research Paper Summary
+
+![Summary](screenshots/summary.png)
+
+### Literature Survey Generation
+
+![Literature Survey](screenshots/literature_survey.png)
+
+### Research Gap Analysis
+
+![Research Gap Analysis](screenshots/research_gap.png)
 
 ## Future Enhancements
 
