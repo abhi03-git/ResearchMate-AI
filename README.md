@@ -45,7 +45,6 @@ ResearchMate AI is an AI-powered research assistant built using Streamlit, Googl
 7. Download generated outputs.
 
 ## Repository Structure
-
 ```text
 ResearchMate-AI/
 │
@@ -54,7 +53,7 @@ ResearchMate-AI/
 ├── README.md
 ├── .gitignore
 ├── .env
-└── screenshots/## Repository Structure
+└── screenshots/
 
 ## Installation
 
@@ -90,23 +89,23 @@ streamlit run app.py
 
 ### Home Page
 
-![Home Page](screenshots/home.png)
+![Home Page](screenshots/Home.png)
 
-### Upload Research Paper
+### Chat with paper
 
-![Upload Paper](screenshots/upload_page.png)
+![Chat with paper](screenshots/Chatwithpaper.png)
 
 ### Research Paper Summary
 
-![Summary](screenshots/summary.png)
+![Summary](screenshots/Summary.png)
 
 ### Literature Survey Generation
 
-![Literature Survey](screenshots/literature_survey.png)
+![Literature survey](screenshots/Literaturesurvey.png)
 
 ### Research Gap Analysis
 
-![Research Gap Analysis](screenshots/research_gap.png)
+![Research Gap](screenshots/ResearchGap.png)
 
 ## Future Enhancements
 
