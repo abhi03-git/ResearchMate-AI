@@ -93,7 +93,7 @@ streamlit run app.py
 
 ### Chat with paper
 
-![Chat with paper](screenshots/Chat_with_paper.png)
+![Chat with paper](screenshots/Chat%20with%20paper.png)
 
 ### Research Paper Summary
 
@@ -101,11 +101,11 @@ streamlit run app.py
 
 ### Literature Survey Generation
 
-![Literature survey](screenshots/Literaturesurvey.png)
+![Literature survey](screenshots/Literature%20survey.png)
 
 ### Research Gap Analysis
 
-![Research Gap](screenshots/ResearchGap.png)
+![Research Gap](screenshots/Research%20Gaps.png)
 
 ## Future Enhancements
 
