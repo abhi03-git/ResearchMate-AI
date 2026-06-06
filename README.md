@@ -54,7 +54,7 @@ ResearchMate-AI/
 ├── .gitignore
 ├── .env
 └── screenshots/
-
+```
 ## Installation
 
 ```bash
