@@ -2,7 +2,16 @@
 
 An AI-powered Research Assistant built using **Streamlit, OpenRouter, FAISS, and Sentence Transformers** that helps researchers, students, and academicians analyze research papers efficiently using Retrieval-Augmented Generation (RAG).
 
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Streamlit-App-red)
+![FAISS](https://img.shields.io/badge/Vector_DB-FAISS-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 ---
+
+## 🎯 Why ResearchMate AI?
+
+Researchers spend significant time reading, summarizing, and comparing academic papers. ResearchMate AI automates these tasks using modern Large Language Models (LLMs), semantic search, and Retrieval-Augmented Generation (RAG), enabling faster literature review and research exploration.
 
 ## 🚀 Features
 
@@ -167,15 +176,25 @@ ResearchMate-AI/
 ├── .env.example
 ├── README.md
 │
-├── Screenshots/
+├── screenshots/
 │   ├── Home.png
-│   ├── Summary.png
-│   ├── Chat with paper.png
-│   ├── Literature survey.png
-│   └── Research Gaps.png
+│   ├── AI_Chat.png
+│   ├── Literature_Matrix.png
+│   ├── Paper_Comparison.png
+│   ├── Research_Gaps.png
+│   └── Research_Proposal.png
 │
 └── papers/
 ```
+
+## ✨ Highlights
+
+- Multi-PDF Research Analysis
+- Retrieval-Augmented Generation (RAG)
+- FAISS-based Semantic Search
+- AI-powered Literature Review
+- Research Proposal Generation
+- Interactive Research Dashboard
 
 ---
 
@@ -193,11 +212,7 @@ ResearchMate-AI/
 
 ## 👨‍💻 Author
 
-**Abhishek Banala**
-
-B.Tech – Computer Science & Engineering (AI & ML)
-
-Malla Reddy Engineering College and Management Sciences
+Abhishek Banala
 
 ---
 
