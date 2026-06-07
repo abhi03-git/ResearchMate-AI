@@ -104,31 +104,26 @@ Research Insights & Answers
 
 ![Home](Screenshots/Home.png)
 
----
+### 💬 AI Research Chat
 
-### 📄 Paper Summary
+![Chat](Screenshots/AI_Chat.png)
 
-![Summary](Screenshots/Summary.png)
+### 📚 Literature Matrix
 
----
+![Literature Matrix](Screenshots/Literature_Matrix.png)
 
-### 💬 Chat with Research Paper
+### ⚖️ Paper Comparison
 
-![Chat](Screenshots/Chat%20with%20paper.png)
-
----
-
-### 📚 Literature Survey
-
-![Literature Survey](Screenshots/Literature%20survey.png)
-
----
+![Paper Comparison](Screenshots/Paper_Comparison.png)
 
 ### 🔍 Research Gap Analysis
 
-![Research Gaps](Screenshots/Research%20Gaps.png)
+![Research Gaps](Screenshots/Research_Gaps.png)
 
----
+### 🚀 Research Proposal
+
+![Research Proposal](Screenshots/Research_Proposal.png)
+
 
 ## ⚙️ Installation
 
