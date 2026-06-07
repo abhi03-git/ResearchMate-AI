@@ -102,27 +102,27 @@ Research Insights & Answers
 
 ### 🏠 Home Dashboard
 
-![Home](Screenshots/Home.png)
+![Home Dashboard](screenshots/Home.png)
 
 ### 💬 AI Research Chat
 
-![Chat](Screenshots/AI_Chat.png)
+![AI Research Chat](screenshots/AI_Chat.png)
 
 ### 📚 Literature Matrix
 
-![Literature Matrix](Screenshots/Literature_Matrix.png)
+![Literature Matrix](screenshots/Literature_Matrix.png)
 
 ### ⚖️ Paper Comparison
 
-![Paper Comparison](Screenshots/Paper_Comparison.png)
+![Paper Comparison](screenshots/Paper_Comparison.png)
 
 ### 🔍 Research Gap Analysis
 
-![Research Gaps](Screenshots/Research_Gaps.png)
+![Research Gap Analysis](screenshots/Research_Gaps.png)
 
 ### 🚀 Research Proposal
 
-![Research Proposal](Screenshots/Research_Proposal.png)
+![Research Proposal](screenshots/Research_Proposal.png)
 
 
 ## ⚙️ Installation
