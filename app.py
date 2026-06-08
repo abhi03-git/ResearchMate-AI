@@ -14,9 +14,9 @@ import os
 load_dotenv()
 
 # Check if API key is loaded
-# if not os.getenv("OPENROUTER_API_KEY"):
-#     st.error("OPENROUTER_API_KEY not found in .env")
-#     st.stop()
+if not os.getenv("OPENROUTER_API_KEY"):
+    st.error("❌ OPENROUTER_API_KEY not found in .env")
+    st.stop()
 
 # Openai API Key
 client = OpenAI(
@@ -25,6 +25,14 @@ client = OpenAI(
 )
 
 MODEL_NAME = "openai/gpt-oss-20b:free"
+
+def download_result(button_text, content, filename):
+    st.download_button(
+        label=button_text,
+        data=content,
+        file_name=filename,
+        mime="text/plain"
+    )
 
 # Sidebar
 with st.sidebar:
@@ -192,11 +200,7 @@ if uploaded_files:
 
     # paper count display
     st.toast(
-        f"✅ {len(uploaded_files)} paper(s) uploaded successfully!"
-    )
-        
-    st.toast(
-        f"📚 Research database ready with {len(uploaded_files)} paper(s)"
+        f"✅ {len(uploaded_files)} paper(s) loaded successfully!"
     )
 
     #Uploading papers
@@ -678,10 +682,11 @@ if uploaded_files:
         
             st.markdown(answer)
         
-            download_result(
+            st.download_button(
                 "⬇️ Download Literature Survey",
                 answer,
-                "literature_survey.txt"
+                file_name="literature_survey.txt",
+                mime="text/plain"
             )
     
         # -----------------------------
@@ -1044,10 +1049,11 @@ if uploaded_files:
         
                 st.markdown(answer)
         
-                download_result(
+                st.download_button(
                     "⬇️ Download Trend Analysis",
                     answer,
-                    "trend_analysis.txt"
+                    file_name="trend_analysis.txt",
+                    mime="text/plain"
                 )
     
         # -----------------------------
