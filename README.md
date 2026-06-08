@@ -2,10 +2,6 @@
 
 An AI-powered Research Assistant built using **Streamlit, OpenRouter, FAISS, and Sentence Transformers** that helps researchers, students, and academicians analyze research papers efficiently using Retrieval-Augmented Generation (RAG).
 
-# 📚 ResearchMate AI
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://researchmate-ai-9k24972mzdh97ucyjdzbv2.streamlit.app)
-
 ## 🌐 Live Demo
 
 🔗 **Try ResearchMate AI:**
