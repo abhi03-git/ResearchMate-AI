@@ -1,8 +1,9 @@
 streamlit
+openai
+python-dotenv
 pypdf
-numpy
 faiss-cpu
+numpy
 sentence-transformers
 langchain-text-splitters
-python-dotenv
-openai
+reportlab
