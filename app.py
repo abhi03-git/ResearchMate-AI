@@ -1,7 +1,5 @@
 from sentence_transformers import SentenceTransformer
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from reportlab.platypus import SimpleDocTemplate, Paragraph
-from reportlab.lib.styles import getSampleStyleSheet
 import faiss
 import numpy as np
 import streamlit as st
@@ -10,18 +8,33 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 
+st.set_page_config(
+    page_title="ResearchMate AI",
+    page_icon="📚",
+    layout="wide"
+)
+
 #load .env
 load_dotenv()
 
-# Check if API key is loaded
-if not os.getenv("OPENROUTER_API_KEY"):
-    st.error("❌ OPENROUTER_API_KEY not found in .env")
-    st.stop()
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
+if not OPENROUTER_API_KEY:
+    OPENROUTER_API_KEY = st.secrets.get(
+        "OPENROUTER_API_KEY",
+        None
+    )
+
+if not OPENROUTER_API_KEY:
+    st.error(
+        "❌ OpenRouter API key not configured"
+    )
+    st.stop()
+    
 # Openai API Key
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key=os.getenv("OPENROUTER_API_KEY")
+    api_key=OPENROUTER_API_KEY
 )
 
 MODEL_NAME = "openai/gpt-oss-20b:free"
@@ -229,11 +242,17 @@ if uploaded_files:
             chunk_overlap=100
         )
     
-        chunks = splitter.split_text(text)
+        if len(text.strip()) == 0:
+            st.error("No text extracted from PDF")
+            st.stop()
     
-        embedding_model = SentenceTransformer(
-            "all-MiniLM-L6-v2"
-        )
+        @st.cache_resource
+        def load_embedding_model():
+            return SentenceTransformer(
+                "all-MiniLM-L6-v2"
+            )
+            
+        embedding_model = load_embedding_model()
     
         embeddings = embedding_model.encode(
             chunks,
