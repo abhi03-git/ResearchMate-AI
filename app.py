@@ -33,8 +33,8 @@ if not OPENROUTER_API_KEY:
     
 # Openai API Key
 client = OpenAI(
-    base_url="https://openrouter.ai/api/v1",
-    api_key=OPENROUTER_API_KEY
+    api_key=OPENROUTER_API_KEY,
+    base_url="https://openrouter.ai/api/v1"
 )
 
 MODEL_NAME = "openai/gpt-oss-20b:free"
@@ -246,12 +246,15 @@ if uploaded_files:
             st.error("No text extracted from PDF")
             st.stop()
     
+        # Create chunks
+        chunks = splitter.split_text(text)
+    
         @st.cache_resource
         def load_embedding_model():
             return SentenceTransformer(
                 "all-MiniLM-L6-v2"
             )
-            
+    
         embedding_model = load_embedding_model()
     
         embeddings = embedding_model.encode(
@@ -263,7 +266,9 @@ if uploaded_files:
             embeddings.shape[1]
         )
     
-        index.add(np.array(embeddings))
+        index.add(
+            np.array(embeddings).astype("float32")
+        )
     
         st.session_state.chunks = chunks
         st.session_state.embedding_model = embedding_model
